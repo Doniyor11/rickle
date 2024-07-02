@@ -6,11 +6,12 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240702093935">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240702142514">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="prealod" src="img/section-one/preloader.gif">
+	<link rel="prealod" src="img/section-one/preloader.webm">
+	<link rel="prealod" src="img/section-one/preloader-mob.webm">
 </head>
 
 <body>
@@ -22,13 +23,13 @@
           <img loading="lazy" data-src="img/icons/back-to-top.png" alt="Image">
         </button>
       </div> -->
+
 		<header class="header">
 			<!-- <img src="img/header/header.png" class="header-bg" alt="Image"> -->
 			<div class="header__content">
 				<a href="#" class="header__logo">
-					<video autoplay playsinline muted loop>
+					<video muted loop playsinline autoplay>
 						<source src="img/header/logo.webm" type="video/webm">
-						Your browser does not support the video tag.
 					</video>
 				</a>
 				<div class="header__menu menu">
@@ -276,6 +277,10 @@
 			</section>
 			<!-- /.section-two -->
 			<section class="section-three main-content">
+				<video class="bg-main" muted loop playsinline autoplay>
+					<source src="img/section-three/background-mob.webm" type="video/webm" media="(max-width:480px)">
+					<source src="img/section-three/background.webm" type="video/webm">
+				</video>
 				<div class="main-content__content" id="roadmap">
 					<div class="main-content__content-top">
 						<div class="main-content__content-top-bg content-top-bg">
@@ -525,7 +530,7 @@
 						const preloaderTemplate = `
 					<div class="fls-preloader">
             <div class="fls-preloader__bg">
-
+           
               <video muted loop playsinline autoplay>
                 <source src="img/section-one/preloader-mob.webm" type="video/webm" media="(max-width:480px)">
                 <source src="img/section-one/preloader.webm" type="video/webm">
@@ -590,7 +595,7 @@
 			</script>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240702093935"></script>
+	<script src="js/app.min.js?_v=20240702142514"></script>
 </body>
 
 </html>

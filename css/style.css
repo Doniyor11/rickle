@@ -454,8 +454,9 @@ img:not([src]):not([srcset]) {
   -o-object-fit: cover;
   object-fit: cover
 }
-.header__logo img {
-  max-width: 9.375vw;
+.header__logo img,
+.header__logo video {
+  max-width: 12.5vw;
   width: 100%;
   max-height: 7.7083333333vw;
   -o-object-fit: cover;
@@ -531,6 +532,10 @@ img:not([src]):not([srcset]) {
   width: 100%;
   position: absolute;
   height: 70vw
+}
+body,
+html {
+  background-color: #000
 }
 .section-one {
   min-height: auto
@@ -750,7 +755,13 @@ img:not([src]):not([srcset]) {
 .main-content {
   position: relative;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  margin-bottom: -5vw
+}
+.main-content .bg-main {
+  position: absolute;
+  top: -20vw;
+  width: 100%
 }
 .main-content__step {
   width: 100%;
@@ -955,8 +966,8 @@ img:not([src]):not([srcset]) {
     width: 12.0833333333vw;
     margin-left: -.4166666667vw;
     margin-right: .7291666667vw;
-    margin-top: -1.3541666667vw;
-    margin-bottom: -1.0416666667vw
+    margin-top: -.9895833333vw;
+    margin-bottom: -.8333333333vw
   }
   .header__content .header__menu .menu__item {
     min-height: 6vw
@@ -968,10 +979,6 @@ img:not([src]):not([srcset]) {
   .footer__front-image-top picture,
   .footer__front-image-top source {
     top: -21vw
-  }
-  body,
-  html {
-    background: #000 url(../img/section-three/background.gif) 0 0/cover
   }
   .hero .main-slide {
     margin-right: 16vw
@@ -1123,16 +1130,12 @@ img:not([src]):not([srcset]) {
     max-height: 100px
   }
   .footer__background video {
-    min-height: 43.75rem
+    min-height: 630px
   }
   .footer__front-image-top img,
   .footer__front-image-top picture,
   .footer__front-image-top source {
     top: -25vw
-  }
-  body,
-  html {
-    background: #000 url(../img/section-three/background-mob.gif) 0 0/cover
   }
   .section-one img {
     height: 100vh;
