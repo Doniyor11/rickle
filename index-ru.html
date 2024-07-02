@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240701025723">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240702093935">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -143,10 +143,10 @@
 					<div class="hero__background">
 						<!-- <img data-src="img/section-two/section-two-bg.png" alt="Image"> -->
 						<video autoplay playsinline muted loop>
-							<source src="img/section-two/section-two-bg.mp4" type="video/mp4">
+							<source src="img/section-two/section-two-bg.webm" type="video/webm">
 							Your browser does not support the video tag.
 						</video>
-						<img data-src="img/section-two/fixed-bottom.png" alt="Image">
+						<img data-src="img/section-two/fixed-bottom.webp" alt="Image">
 					</div>
 					<div class="hero__body">
 						<div class="info-block__slide slide main-slide">
@@ -257,7 +257,7 @@
 
 						<div class="hero__rick-and-info">
 							<div class="rick-image">
-								<img src="img/section-two/rick.png" alt="Image Rick Main Section">
+								<img src="img/section-two/rick.webp" alt="Image Rick Main Section">
 							</div>
 							<div class="main-text">
 								<p>
@@ -277,14 +277,16 @@
 						<div class="main-content__content-top-bg content-top-bg">
 							<div class="content-top-bg__video">
 								<video autoplay playsinline muted loop>
-									<source src="img/section-three/Roadmap 25 fps.mp4" type="video/mp4">
+									<source src="img/section-three/Roadmap 25 fps.webm" type="video/webm">
 									Your browser does not support the video tag.
 								</video>
 
 							</div>
 							<div class="content-top-bg__video-colba">
-								<img data-src="img/section-three/colba.gif" alt="Image gif">
-
+								<!-- <img data-src="img/section-three/colba.gif" alt="Image gif"> -->
+								<video muted loop playsinline autoplay>
+									<source src="img/section-three/colba.webm" type="video/webm">
+								</video>
 							</div>
 							<div class="content-top-bg__video-keyboard">
 								<img data-src="img/section-three/keyboard.gif" alt="Image">
@@ -399,9 +401,9 @@
 					</picture>
 				</div>
 				<div class="footer__background">
-					<video autoplay playsinline muted loop>
-						<source src="img/footer/footer.mp4" type="video/mp4">
-						Your browser does not support the video tag.
+					<video muted loop playsinline autoplay>
+						<source src="img/footer/footer-mob.webm" type="video/webm" media="(max-width:480px)">
+						<source src="img/footer/footer.webm" type="video/webm">
 					</video>
 				</div>
 				<div class="footer__board">
@@ -412,8 +414,8 @@
 				</div>
 				<div class="footer__front-image">
 					<picture>
-						<source media="(max-width: 480px)" srcset="img/footer/footer-front-bg-mob.png" />
-						<img data-src="img/footer/footer-front-bg.png" alt="Image">
+						<source media="(max-width: 480px)" srcset="img/footer/footer-front-bg-mob.webp" />
+						<img data-src="img/footer/footer-front-bg.webp" alt="Image">
 					</picture>
 				</div>
 			</div>
@@ -446,16 +448,17 @@
 						display: flex;
 						justify-content:center;
 						align-items: center;
+            background-color: #000;
 					}
           .fls-preloader__bg {
             position: absolute;
             inset: 0;
           }
-          .fls-preloader__bg  img {
+          .fls-preloader__bg  video {
             max-width: 100%;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
           }
 					/* Блок з елементами */
 					.fls-preloader__body{
@@ -513,10 +516,10 @@
 					<div class="fls-preloader">
             <div class="fls-preloader__bg">
            
-              <picture>
-                <source srcset="img/section-one/preloader-mob.gif" media="(max-width: 480px)" />
-                  <img src="img/section-one/preloader.gif">
-              </picture>  
+              <video muted loop playsinline autoplay>
+                <source src="img/section-one/preloader-mob.webm" type="video/webm" media="(max-width:480px)">
+                <source src="img/section-one/preloader.webm" type="video/webm">
+              </video>
             </div>
 						<div class="fls-preloader__body">
 							<div class="fls-preloader__counter">0%</div>
@@ -557,7 +560,7 @@
 							const intervalId = setInterval(() => {
 								counter >= progress ? clearInterval(intervalId) : setValueProgress(++counter);
 								counter >= 100 ? addLoadedClass() : null;
-							}, 100);
+							}, 300);
 						}
 
 						function addLoadedClass() {
@@ -567,7 +570,7 @@
 							setInterval(() => {
 								preloader.remove();
 								preloaderContainer.remove();
-							}, 500);
+							}, 100);
 						}
 					} else {
 						preloaderContainer.remove();
@@ -577,7 +580,7 @@
 			</script>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240701025723"></script>
+	<script src="js/app.min.js?_v=20240702093935"></script>
 </body>
 
 </html>

@@ -581,7 +581,7 @@ img:not([src]):not([srcset]) {
   object-fit: cover
 }
 .hero__rick-and-info .main-text {
-  background: url(../img/section-two/main-text-bg.png) 0 0/100% 100% no-repeat;
+  background: url(../img/section-two/main-text-bg.webp) 0 0/100% 100% no-repeat;
   padding: 5vw
 }
 .hero__rick-and-info .main-text p {
@@ -595,7 +595,7 @@ img:not([src]):not([srcset]) {
   max-width: 90vw;
   min-height: 30.2083333333vw;
   width: 100%;
-  background: url(../img/section-two/bg-section-main.png) 0 0/100% 100% no-repeat
+  background: url(../img/section-two/bg-section-main.webp) 0 0/100% 100% no-repeat
 }
 .hero .slide__body {
   padding: 4vw 20vw 5vw 10.5vw
@@ -690,7 +690,7 @@ img:not([src]):not([srcset]) {
   max-width: 76.0416666667vw;
   min-height: 43.2291666667vw;
   width: 100%;
-  background: url(../img/section-two/bg-section.png) 0 0/100% 100% no-repeat;
+  background: url(../img/section-two/bg-section.webp) 0 0/100% 100% no-repeat;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   pointer-events: none;
@@ -767,21 +767,21 @@ img:not([src]):not([srcset]) {
   display: block;
   position: absolute;
   inset: 0;
-  background: url(../img/section-three/steps-bg/step.png) 0 0/100% 100% no-repeat
+  background: url(../img/section-three/steps-bg/step.webp) 0 0/100% 100% no-repeat
 }
 .main-content__step.step-q3::before {
   content: "";
   display: block;
   position: absolute;
   inset: 0;
-  background: url(../img/section-three/steps-bg/step-2.png) 0 0/100% 100% no-repeat
+  background: url(../img/section-three/steps-bg/step-2.webp) 0 0/100% 100% no-repeat
 }
 .main-content__step.step-q4::before {
   content: "";
   display: block;
   position: absolute;
   inset: 0;
-  background: url(../img/section-three/steps-bg/step-3.png) 0 0/100% 100% no-repeat
+  background: url(../img/section-three/steps-bg/step-3.webp) 0 0/100% 100% no-repeat
 }
 .main-content__step .step__body {
   position: relative;
@@ -830,12 +830,13 @@ img:not([src]):not([srcset]) {
 }
 .main-content__content-top-bg .content-top-bg__video-colba {
   position: absolute;
-  right: 2.65%;
-  top: 13.15%
+  right: -7.4vw;
+  top: 10.9%
 }
-.main-content__content-top-bg .content-top-bg__video-colba img {
+.main-content__content-top-bg .content-top-bg__video-colba img,
+.main-content__content-top-bg .content-top-bg__video-colba video {
   max-width: 60%;
-  width: 25vw
+  width: 39vw
 }
 .main-content__content-top-bg .content-top-bg__video-keyboard {
   position: absolute;
@@ -1121,6 +1122,9 @@ img:not([src]):not([srcset]) {
   .header__mob {
     max-height: 100px
   }
+  .footer__background video {
+    min-height: 43.75rem
+  }
   .footer__front-image-top img,
   .footer__front-image-top picture,
   .footer__front-image-top source {
@@ -1245,7 +1249,7 @@ img:not([src]):not([srcset]) {
     line-height: 110%
   }
   .main-content__content {
-    margin-bottom: 20%;
+    margin-bottom: -5%;
     margin-top: 0
   }
   .main-content__content-bottom {
