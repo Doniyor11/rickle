@@ -222,7 +222,8 @@ img:not([src]):not([srcset]) {
 .header__content .header__menu .menu__item {
   position: relative;
   background-size: 100%!important;
-  cursor: pointer
+  cursor: pointer;
+  width: 101%
 }
 .header__content .header__menu .menu__item.disabled a {
   position: relative;
@@ -264,7 +265,8 @@ img:not([src]):not([srcset]) {
   opacity: 1
 }
 .header__content .header__menu .menu__item-1 {
-  background: url(../img/header/header-links/button-1.png) 0 0 no-repeat
+  background: url(../img/header/header-links/button-1.png) 0 0 no-repeat;
+  margin-left: -.125rem
 }
 .header__content .header__menu .menu__item-1::before {
   content: "";
@@ -272,7 +274,7 @@ img:not([src]):not([srcset]) {
 }
 .header__content .header__menu .menu__item-1::after {
   content: "";
-  background: url(../img/header/header-links/button-1-active.png) 0 0 no-repeat
+  background: url(../img/header/header-links/button-1-hover.png) 0 0 no-repeat
 }
 .header-ru .header__content .header__menu .menu__item-1 {
   background: url(../img/header/header-link-ru/button-2.png) 0 0 no-repeat
@@ -309,7 +311,7 @@ img:not([src]):not([srcset]) {
 }
 .header__content .header__menu .menu__item-2::after {
   content: "";
-  background: url(../img/header/header-links/button-2-active.png) 0 0 no-repeat
+  background: url(../img/header/header-links/button-2-hover.png) 0 0 no-repeat
 }
 .header-ru .header__content .header__menu .menu__item-2 {
   background: url(../img/header/header-link-ru/button-3.png) 0 0 no-repeat
@@ -323,15 +325,15 @@ img:not([src]):not([srcset]) {
   background: url(../img/header/header-link-ru/button-3-hover.png) 0 0 no-repeat
 }
 .header__content .header__menu .menu__item-3 {
-  background: url(../img/header/header-links/button-3.png) 0 0 no-repeat
+  background: url(../img/header/header-links/button-3-hover.png) 0 0 no-repeat
 }
 .header__content .header__menu .menu__item-3::before {
   content: "";
-  background: url(../img/header/header-links/button-3.png) 0 0 no-repeat
+  background: url(../img/header/header-links/button-3-hover.png) 0 0 no-repeat
 }
 .header__content .header__menu .menu__item-3::after {
   content: "";
-  background: url(../img/header/header-links/button-3-active.png) 0 0 no-repeat
+  background: url(../img/header/header-links/button-3.png) 0 0 no-repeat
 }
 .header-ru .header__content .header__menu .menu__item-3 {
   background: url(../img/header/header-link-ru/button-4.png) 0 0 no-repeat
@@ -345,15 +347,15 @@ img:not([src]):not([srcset]) {
   background: url(../img/header/header-link-ru/button-4-hover.png) 0 0 no-repeat
 }
 .header__content .header__menu .menu__item-4 {
-  background: url(../img/header/header-links/button-4.png) 0 0 no-repeat
+  background: url(../img/header/header-links/button-4-hover.png) 0 0 no-repeat
 }
 .header__content .header__menu .menu__item-4::before {
   content: "";
-  background: url(../img/header/header-links/button-4.png) 0 0 no-repeat
+  background: url(../img/header/header-links/button-4-hover.png) 0 0 no-repeat
 }
 .header__content .header__menu .menu__item-4::after {
   content: "";
-  background: url(../img/header/header-links/button-4-active.png) 0 0 no-repeat
+  background: url(../img/header/header-links/button-4.png) 0 0 no-repeat
 }
 .header-ru .header__content .header__menu .menu__item-4 {
   background: url(../img/header/header-link-ru/button-5-hover.png) 0 0 no-repeat
