@@ -426,8 +426,7 @@ img:not([src]):not([srcset]) {
   display: flex;
   font-size: 4.25vw;
   align-items: center;
-  justify-content: center;
-  border-right: 1.25vw solid #85fa7d
+  justify-content: center
 }
 .header__menu li.language a:last-child {
   padding-right: 0;
@@ -841,7 +840,7 @@ html {
 }
 .main-content__content-top-bg .content-top-bg__video-colba {
   position: absolute;
-  right: -7.4vw;
+  right: -7.2vw;
   top: 10.9%
 }
 .main-content__content-top-bg .content-top-bg__video-colba img,
@@ -1118,6 +1117,7 @@ html {
     padding: 2vw 4vw
   }
   .header__menu li.language {
+    background: url(../img/lang.webp) 0 0/100% 100% no-repeat;
     padding-left: 4vw
   }
   .header__menu li a {
