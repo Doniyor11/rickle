@@ -176,12 +176,20 @@ img:not([src]):not([srcset]) {
 .header__language a.active {
   color: #83fd9b
 }
+.header .header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%
+}
 .header__content {
   display: flex;
   align-items: center;
   padding: 1vw
 }
 .header__content .header__socials {
+  z-index: 2;
   background: url(../img/header/tgx.png) 0 0/100% 100% no-repeat;
   min-height: 5.8vw;
   margin-left: .2083333333vw;
@@ -443,9 +451,6 @@ img:not([src]):not([srcset]) {
 .header__menu li:nth-child(2) a {
   padding-left: 10%
 }
-.header__menu li a {
-  text-shadow: -1px -1px 0 #97fa7d,-1px 0 0 #97fa7d,-1px 1px 0 #97fa7d,0 -1px 0 #97fa7d,0 0 0 #97fa7d,0 1px 0 #97fa7d,1px -1px 0 #97fa7d,1px 0 0 #97fa7d,1px 1px 0 #97fa7d
-}
 .header__menu li.social-button {
   background: url(../img/header/social-button.png) 0 0/100% 100% no-repeat
 }
@@ -454,6 +459,10 @@ img:not([src]):not([srcset]) {
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover
+}
+.header__logo {
+  position: relative;
+  z-index: -1
 }
 .header__logo img,
 .header__logo video {
@@ -588,14 +597,13 @@ html {
 }
 .hero__rick-and-info .main-text {
   background: url(../img/section-two/main-text-bg.webp) 0 0/100% 100% no-repeat;
-  padding: 5vw
+  padding: 3vw 4vw 2vw 4vw
 }
 .hero__rick-and-info .main-text p {
   letter-spacing: 1px;
   font-weight: 700;
   line-height: 1.1;
-  color: #000;
-  text-shadow: -1px -1px 0 #97fa7d,-1px 0 0 #97fa7d,-1px 1px 0 #97fa7d,0 -1px 0 #97fa7d,0 0 0 #97fa7d,0 1px 0 #97fa7d,1px -1px 0 #97fa7d,1px 0 0 #97fa7d,1px 1px 0 #97fa7d
+  color: #000
 }
 .hero .slide {
   max-width: 90vw;
@@ -769,7 +777,7 @@ html {
   position: relative
 }
 .main-content__step.step-q2 .step__body {
-  padding: 4vw 9vw 6vw 8vw!important
+  padding: 6vw 9vw 6vw 8vw!important
 }
 .main-content__step.step-q3 .step__body {
   margin-left: auto
@@ -778,22 +786,19 @@ html {
   content: "";
   display: block;
   position: absolute;
-  inset: 0;
-  background: url(../img/section-three/steps-bg/step.webp) 0 0/100% 100% no-repeat
+  inset: 0
 }
 .main-content__step.step-q3::before {
   content: "";
   display: block;
   position: absolute;
-  inset: 0;
-  background: url(../img/section-three/steps-bg/step-2.webp) 0 0/100% 100% no-repeat
+  inset: 0
 }
 .main-content__step.step-q4::before {
   content: "";
   display: block;
   position: absolute;
-  inset: 0;
-  background: url(../img/section-three/steps-bg/step-3.webp) 0 0/100% 100% no-repeat
+  inset: 0
 }
 .main-content__step .step__body {
   position: relative;
@@ -812,7 +817,6 @@ html {
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
   flex-direction: column
 }
 .main-content__content {
@@ -948,8 +952,7 @@ html {
 }
 @media (min-width:29.99875em) {
   .header {
-    min-height: 7.8125vw;
-    background: url(../img/header/background-main-header-pc.png) 0 0/100% no-repeat
+    min-height: 7.8125vw
   }
   .header::before {
     content: "";
@@ -972,6 +975,9 @@ html {
   }
   .header__content .header__menu .menu__item {
     min-height: 6vw
+  }
+  .header__menu li a {
+    text-shadow: -1px -1px 0 #97fa7d,-1px 0 0 #97fa7d,-1px 1px 0 #97fa7d,0 -1px 0 #97fa7d,0 0 0 #97fa7d,0 1px 0 #97fa7d,1px -1px 0 #97fa7d,1px 0 0 #97fa7d,1px 1px 0 #97fa7d
   }
   .header__mob {
     display: none
@@ -1009,7 +1015,8 @@ html {
     max-width: 38.5416666667vw
   }
   .hero__rick-and-info .main-text p {
-    font-size: 1.875vw
+    font-size: 1.875vw;
+    text-shadow: -1px -1px 0 #97fa7d,-1px 0 0 #97fa7d,-1px 1px 0 #97fa7d,0 -1px 0 #97fa7d,0 0 0 #97fa7d,0 1px 0 #97fa7d,1px -1px 0 #97fa7d,1px 0 0 #97fa7d,1px 1px 0 #97fa7d
   }
   .hero .slide__body h4 {
     text-shadow: -2px -2px 0 #97fa7d,-2px -1px 0 #97fa7d,-2px 0 0 #97fa7d,-2px 1px 0 #97fa7d,-2px 2px 0 #97fa7d,-1px -2px 0 #97fa7d,-1px -1px 0 #97fa7d,-1px 0 0 #97fa7d,-1px 1px 0 #97fa7d,-1px 2px 0 #97fa7d,0 -2px 0 #97fa7d,0 -1px 0 #97fa7d,0 0 0 #97fa7d,0 1px 0 #97fa7d,0 2px 0 #97fa7d,1px -2px 0 #97fa7d,1px -1px 0 #97fa7d,1px 0 0 #97fa7d,1px 1px 0 #97fa7d,1px 2px 0 #97fa7d,2px -2px 0 #97fa7d,2px -1px 0 #97fa7d,2px 0 0 #97fa7d,2px 1px 0 #97fa7d,2px 2px 0 #97fa7d;
@@ -1034,6 +1041,15 @@ html {
     max-width: 50vw;
     padding: 4vw 6vw 6vw 7vw!important
   }
+  .main-content__step.step-q2::before {
+    background: url(../img/section-three/steps-bg/step.webp) 0 0/100% 100% no-repeat
+  }
+  .main-content__step.step-q3::before {
+    background: url(../img/section-three/steps-bg/step-2.webp) 0 0/100% 100% no-repeat
+  }
+  .main-content__step.step-q4::before {
+    background: url(../img/section-three/steps-bg/step-3.webp) 0 0/100% 100% no-repeat
+  }
   .main-content__step .step__body {
     padding: 5vw 6vw 6vw 9vw
   }
@@ -1051,6 +1067,9 @@ html {
     line-height: 1;
     color: #caffa6;
     text-shadow: -1px -1px 0 #97fa7d,-1px 0 0 #97fa7d,-1px 1px 0 #97fa7d,0 -1px 0 #97fa7d,0 0 0 #97fa7d,0 1px 0 #97fa7d,1px -1px 0 #97fa7d,1px 0 0 #97fa7d,1px 1px 0 #97fa7d
+  }
+  .main-content__list {
+    align-items: center
   }
 }
 @media (max-width:61.99875em) {
@@ -1123,6 +1142,7 @@ html {
     padding-left: 4vw
   }
   .header__menu li a {
+    text-shadow: -.5px -.5px 0 #97fa7d,-.5px 0 0 #97fa7d,-.5px .5px 0 #97fa7d,0 -.5px 0 #97fa7d,0 0 0 #97fa7d,0 .5px 0 #97fa7d,.5px -.5px 0 #97fa7d,.5px 0 0 #97fa7d,.5px .5px 0 #97fa7d;
     font-size: 4.5833333333vw
   }
   .header__content {
@@ -1187,10 +1207,11 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 6vw 12vw
+    padding: 8vw 12vw 6vw 12vw
   }
   .hero__rick-and-info .main-text p {
-    font-size: 5vw
+    font-size: 4.1666666667vw;
+    text-shadow: -.5px -.5px 0 #97fa7d,-.5px 0 0 #97fa7d,-.5px .5px 0 #97fa7d,0 -.5px 0 #97fa7d,0 0 0 #97fa7d,0 .5px 0 #97fa7d,.5px -.5px 0 #97fa7d,.5px 0 0 #97fa7d,.5px .5px 0 #97fa7d
   }
   .hero .slide__body h4 {
     text-shadow: -1px -1px 0 #97fa7d,-1px 0 0 #97fa7d,-1px 1px 0 #97fa7d,0 -1px 0 #97fa7d,0 0 0 #97fa7d,0 1px 0 #97fa7d,1px -1px 0 #97fa7d,1px 0 0 #97fa7d,1px 1px 0 #97fa7d;
@@ -1214,44 +1235,69 @@ html {
     margin-bottom: 40vw
   }
   .main-content__step {
-    max-width: 80vw;
-    min-height: 45vw;
-    margin-bottom: 8.3333333333vw
+    max-width: 85vw;
+    min-height: 60vw;
+    margin-bottom: -4.1666666667vw
+  }
+  .main-content__step:last-child {
+    margin-bottom: 0
   }
   .main-content__step.step-q2 .step__body .step__heading {
-    margin-left: 6vw!important;
+    margin-left: 4vw!important;
     margin-top: 1vw;
     margin-bottom: 4vw
   }
+  .main-content__step.step-q2 .step__body li {
+    margin-bottom: 2.5vw
+  }
   .main-content__step.step-q3 .step__body {
-    padding: 4vw 8vw 6vw 9vw!important
+    padding: 6vw 12vw 6vw 9vw!important
+  }
+  .main-content__step.step-q3 .step__body li {
+    margin-bottom: 2.9166666667vw
   }
   .main-content__step.step-q3 .step__body .step__heading {
-    margin-right: 5vw!important;
+    margin-right: 3vw!important;
     margin-bottom: 4vw;
     margin-top: 1vw
   }
   .main-content__step.step-q4 .step__body {
-    max-width: 60vw;
-    padding: 5vw 6vw 7vw 8vw!important
+    max-width: 75vw;
+    padding: 7vw 6vw 7vw 8vw!important
   }
   .main-content__step.step-q4 .step__body .step__heading {
-    margin-left: 6vw;
+    margin-left: 3vw;
     margin-bottom: 4vw
+  }
+  .main-content__step.step-q2::before {
+    background: url(../img/section-three/steps-bg/step-mob.webp) 0 0/100% 100% no-repeat
+  }
+  .main-content__step.step-q3::before {
+    background: url(../img/section-three/steps-bg/step-mob-2.webp) 0 0/100% 100% no-repeat
+  }
+  .main-content__step.step-q4::before {
+    background: url(../img/section-three/steps-bg/step-mob-3.webp) 0 0/100% 100% no-repeat
   }
   .main-content__step .step__body {
     padding: 8vw 14vw
   }
   .main-content__step .step__heading {
-    font-size: 3.9583333333vw;
+    font-size: 5.2083333333vw;
     margin-left: 7vw;
     margin-right: 7vw;
-    margin-bottom: 6vw
+    margin-bottom: 6vw;
+    color: #caffa7;
+    letter-spacing: .1vw;
+    text-shadow: -.5px -.5px 0 #97fa7d,-.5px 0 0 #97fa7d,-.5px .5px 0 #97fa7d,0 -.5px 0 #97fa7d,0 0 0 #97fa7d,0 .5px 0 #97fa7d,.5px -.5px 0 #97fa7d,.5px 0 0 #97fa7d,.5px .5px 0 #97fa7d
   }
   .main-content__step .step__list li {
-    font-size: 2.5vw;
+    font-size: 3vw;
     margin-bottom: 1.6666666667vw;
-    line-height: 110%
+    line-height: 110%;
+    font-weight: 100;
+    color: #caffa7;
+    letter-spacing: .1vw;
+    text-shadow: -.5px -.5px 0 #97fa7d,-.5px 0 0 #97fa7d,-.5px .5px 0 #97fa7d,0 -.5px 0 #97fa7d,0 0 0 #97fa7d,0 .5px 0 #97fa7d,.5px -.5px 0 #97fa7d,.5px 0 0 #97fa7d,.5px .5px 0 #97fa7d
   }
   .main-content__content {
     margin-bottom: -5%;
