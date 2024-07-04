@@ -267,7 +267,7 @@ img:not([src]):not([srcset]) {
     width: 100%;
     height: 6vw
 }
-
+Точка, [04.07.2024 13:40]
 .header__content .header__menu .menu__item.disabled a::before {
     content: "";
     top: -1.3541666667vw;
@@ -279,164 +279,144 @@ img:not([src]):not([srcset]) {
     z-index: 2;
     background: url(../img/header/doesntwork0.png) 0 0/100% 100% no-repeat
 }
-
-.header__content .header__menu .menu__item::after, .header__content .header__menu .menu__item::before {
-    content: "";
-    background-size: 100% !important;
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    transition: all .3s
-}
-
+.header__content .header__menu .menu__item::before,
 .header__content .header__menu .menu__item::after {
     content: "";
-    z-index: 2
+    position: absolute;
+    inset: 0;
+    background-size: 100%!important;
+    transition: all .01s;
 }
-
-.header__content .header__menu .menu__item:hover::before {
-    opacity: 1
-}
-
+/* .header__content .header__menu .menu__item::after {
+  content: "";
+  z-index: 2
+} */
+/* .header__content .header__menu .menu__item:hover::before {
+  opacity: 1
+} */
 .header__content .header__menu .menu__item:active::before {
-    opacity: 0
+    opacity: 0;
 }
 
 .header__content .header__menu .menu__item:active::after {
-    opacity: 1
+    opacity: 1;
 }
-
 .header__content .header__menu .menu__item-1 {
-    background: url(../img/header/header-links/button-1.png) 0 0 no-repeat;
-    margin-left: -.125rem
+    background: url(../img/header/header-links/rm1.png) -1px 0 no-repeat;
 }
-
 .header__content .header__menu .menu__item-1::before {
     content: "";
-    background: url(../img/header/header-links/button-1.png) 0 0 no-repeat
+    background: url(../img/header/header-links/rm0.png) -1px 2px no-repeat
 }
-
-.header__content .header__menu .menu__item-1::after {
-    content: "";
-    background: url(../img/header/header-links/button-1-hover.png) 0 0 no-repeat
-}
-
+/* .header__content .header__menu .menu__item-1::after {
+  content: "";
+  background: url(../img/header/header-links/rm1.png) 0 0 no-repeat;
+  opacity: 0;
+} */
 .header-ru .header__content .header__menu .menu__item-1 {
-    background: url(../img/header/header-link-ru/button-2.png) 0 0 no-repeat
+    background: url(../img/header/header-link-ru/rm1.png) -1px 0px no-repeat
 }
-
 .header-ru .header__content .header__menu .menu__item-1::before {
     content: "";
-    background: url(../img/header/header-link-ru/button-2.png) 0 0 no-repeat
+    background: url(../img/header/header-link-ru/rm0.png) -1px 2px no-repeat
 }
-
-.header-ru .header__content .header__menu .menu__item-1::after {
-    content: "";
-    background: url(../img/header/header-link-ru/button-2-hover.png) 0 0 no-repeat
-}
-
+/* .header-ru .header__content .header__menu .menu__item-1::after {
+  content: "";
+  background: url(../img/header/header-link-ru/rm1.png) 0 0 no-repeat
+} */
 .header__content .header__menu .menu__item-token {
-    background: url(../img/header/header-links/token.png) 0 0 no-repeat;
-    margin-top: .15vw
+    background: url(../img/header/header-links/token1.png) 0 0 no-repeat;
 }
-
-.header__content .header__menu .menu__item-token::after {
+.header__content .header__menu .menu__item-token::before {
     content: "";
-    background: url(../img/header/header-links/token-hover.png) 0 0 no-repeat
+    background: url(../img/header/header-links/token0.png) 0 3px no-repeat
 }
-
+/* .header__content .header__menu .menu__item-token::after {
+  content: "";
+  background: url(../img/header/header-links/token-hover.png) 0 0 no-repeat
+} */
+/* !!!!! */
 .header-ru .header__content .header__menu .menu__item-token {
-    background: url(../img/header/header-link-ru/token.png) 0 0 no-repeat
+    background: url(../img/header/header-link-ru/token1.png) 0 0 no-repeat
 }
-
-.header-ru .header__content .header__menu .menu__item-token::after {
+.header-ru .header__content .header__menu .menu__item-token::before {
     content: "";
-    background: url(../img/header/header-link-ru/token-hover.png) 0 0 no-repeat
+    background: url(../img/header/header-link-ru/token0.png) 0 3px no-repeat
 }
-
+/* !!!!! */
+/* .header-ru .header__content .header__menu .menu__item-token::after {
+  content: "";
+  background: url(../img/header/header-link-ru/token-hover.png) 0 0 no-repeat
+} */
 .header__content .header__menu .menu__item-2 {
-    background: url(../img/header/header-links/button-2.png) 0 0 no-repeat
+    background: url(../img/header/header-links/tokenomics1.png) 0 0 no-repeat
 }
-
 .header__content .header__menu .menu__item-2::before {
     content: "";
-    background: url(../img/header/header-links/button-2.png) 0 0 no-repeat
+    background: url(../img/header/header-links/tokenomics0.png) 0 0 no-repeat
 }
-
-.header__content .header__menu .menu__item-2::after {
-    content: "";
-    background: url(../img/header/header-links/button-2-hover.png) 0 0 no-repeat
-}
-
+/* .header__content .header__menu .menu__item-2::after {
+  content: "";
+  background: url(../img/header/header-links/tokenomics.png) 0 0 no-repeat
+} */
 .header-ru .header__content .header__menu .menu__item-2 {
-    background: url(../img/header/header-link-ru/button-3.png) 0 0 no-repeat
+    background: url(../img/header/header-link-ru/tokenomics1.png) 0 0 no-repeat
 }
-
 .header-ru .header__content .header__menu .menu__item-2::before {
     content: "";
-    background: url(../img/header/header-link-ru/button-3.png) 0 0 no-repeat
+    background: url(../img/header/header-link-ru/tokenomics0.png) 0 0 no-repeat
 }
-
-.header-ru .header__content .header__menu .menu__item-2::after {
-    content: "";
-    background: url(../img/header/header-link-ru/button-3-hover.png) 0 0 no-repeat
-}
-
+/* .header-ru .header__content .header__menu .menu__item-2::after {
+  content: "";
+  background: url(../img/header/header-link-ru/button-3-hover.png) 0 0 no-repeat
+} */
 .header__content .header__menu .menu__item-3 {
-    background: url(../img/header/header-links/button-3-hover.png) 0 0 no-repeat
+    background: url(../img/header/header-links/whitepaper1.png) 0 0 no-repeat
 }
-
 .header__content .header__menu .menu__item-3::before {
     content: "";
-    background: url(../img/header/header-links/button-3-hover.png) 0 0 no-repeat
+    background: url(../img/header/header-links/whitepaper0.png) 0 0 no-repeat
 }
-
-.header__content .header__menu .menu__item-3::after {
-    content: "";
-    background: url(../img/header/header-links/button-3.png) 0 0 no-repeat
-}
-
+/* .header__content .header__menu .menu__item-3::after {
+  content: "";
+  background: url(../img/header/header-links/button-3.png) 0 0 no-repeat
+} */
 .header-ru .header__content .header__menu .menu__item-3 {
-    background: url(../img/header/header-link-ru/button-4.png) 0 0 no-repeat
+    background: url(../img/header/header-link-ru/whitepaper1.png) 0 0 no-repeat
 }
+
+Точка, [04.07.2024 13:40]
 
 .header-ru .header__content .header__menu .menu__item-3::before {
     content: "";
-    background: url(../img/header/header-link-ru/button-4.png) 0 0 no-repeat
+    background: url(../img/header/header-link-ru/whitepaper0.png) 0 0 no-repeat
 }
-
-.header-ru .header__content .header__menu .menu__item-3::after {
-    content: "";
-    background: url(../img/header/header-link-ru/button-4-hover.png) 0 0 no-repeat
-}
-
+/* .header-ru .header__content .header__menu .menu__item-3::after {
+  content: "";
+  background: url(../img/header/header-link-ru/button-4-hover.png) 0 0 no-repeat
+} */
 .header__content .header__menu .menu__item-4 {
-    background: url(../img/header/header-links/button-4-hover.png) 0 0 no-repeat
+    background: url(../img/header/header-links/tgminiapp1.png) 0 0 no-repeat
 }
-
 .header__content .header__menu .menu__item-4::before {
     content: "";
-    background: url(../img/header/header-links/button-4-hover.png) 0 0 no-repeat
+    background: url(../img/header/header-links/tgminiapp0.png) 0 0 no-repeat
 }
-
-.header__content .header__menu .menu__item-4::after {
-    content: "";
-    background: url(../img/header/header-links/button-4.png) 0 0 no-repeat
-}
-
+/* .header__content .header__menu .menu__item-4::after {
+  content: "";
+  background: url(../img/header/header-links/button-4.png) 0 0 no-repeat
+} */
 .header-ru .header__content .header__menu .menu__item-4 {
-    background: url(../img/header/header-link-ru/button-5-hover.png) 0 0 no-repeat
+    background: url(../img/header/header-link-ru/tgminiapp1.png) 0 0 no-repeat
 }
-
 .header-ru .header__content .header__menu .menu__item-4::before {
     content: "";
-    background: url(../img/header/header-link-ru/button-5-hover.png) 0 0 no-repeat
+    background: url(../img/header/header-link-ru/tgminiapp0.png) 0 0 no-repeat
 }
-
-.header-ru .header__content .header__menu .menu__item-4::after {
-    content: "";
-    background: url(../img/header/header-link-ru/button-5.png) 0 0 no-repeat
-}
+/* .header-ru .header__content .header__menu .menu__item-4::after {
+  content: "";
+  background: url(../img/header/header-link-ru/button-5.png) 0 0 no-repeat
+} */
 
 .header__menu .menu__body--list {
     display: grid;
