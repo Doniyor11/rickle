@@ -6,11 +6,12 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240701184040">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240705180331">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="prealod" src="img/section-one/preloader.gif">
+	<link rel="prealod" src="img/section-one/preloader.webm">
+	<link rel="prealod" src="img/section-one/preloader-mob.webm">
 </head>
 
 <body>
@@ -22,11 +23,14 @@
           <img loading="lazy" data-src="img/icons/back-to-top.png" alt="Image">
         </button>
       </div> -->
+
 		<header class="header">
-			<!-- <img src="img/header/header.png" class="header-bg" alt="Image"> -->
+			<img src="img/header/background-main-header-pc.png" class="header-bg" alt="Image">
 			<div class="header__content">
 				<a href="#" class="header__logo">
-					<img src="img/header/logo.gif" alt="Header Logo">
+					<video muted loop playsinline autoplay>
+						<source src="img/header/logo.webm" type="video/webm">
+					</video>
 				</a>
 				<div class="header__menu menu">
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
@@ -148,7 +152,7 @@
 							<source src="img/section-two/section-two-bg.webm" type="video/webm">
 							Your browser does not support the video tag.
 						</video>
-						<img data-loading="lazy" data-src="img/section-two/fixed-bottom.png" alt="Image">
+						<img data-loading="lazy" data-src="img/section-two/fixed-bottom.webp" alt="Image">
 					</div>
 					<div class="hero__body">
 						<div class="info-block__slide slide main-slide">
@@ -259,11 +263,12 @@
 
 						<div class="hero__rick-and-info">
 							<div class="rick-image">
-								<img loading="lazy" data-src="img/section-two/rick.png" alt="Image Rick Main Section">
+								<img loading="lazy" data-src="img/section-two/rick.webp" alt="Image Rick Main Section">
 							</div>
 							<div class="main-text">
 								<p>
 									There's no time to be dumb while others are earning, Morty!
+									<br> <br>
 									It's time to act — now!
 								</p>
 							</div>
@@ -273,6 +278,10 @@
 			</section>
 			<!-- /.section-two -->
 			<section class="section-three main-content">
+				<video class="bg-main" muted loop playsinline autoplay>
+					<source src="img/section-three/background-mob.webm" type="video/webm" media="(max-width:480px)">
+					<source src="img/section-three/background.webm" type="video/webm">
+				</video>
 				<div class="main-content__content" id="roadmap">
 					<div class="main-content__content-top">
 						<div class="main-content__content-top-bg content-top-bg">
@@ -402,10 +411,10 @@
 			<div class="footer__content">
 				<div class="footer__front-image-top">
 
-					<video muted loop playsinline autoplay>
-						<source src="img/section-three/perehod-mob.webm" type="video/webm" media="(max-width:480px)">
-						<source src="img/section-three/perehod.webm" type="video/webm">
-					</video>
+					<picture>
+						<source media="(max-width: 480px)" srcset="img/section-three/perehod-mob.gif" />
+						<img data-src="img/section-three/perehod.gif" alt="Image gif">
+					</picture>
 				</div>
 				<div class="footer__background">
 					<video muted loop playsinline autoplay>
@@ -421,8 +430,8 @@
 				</div>
 				<div class="footer__front-image">
 					<picture>
-						<source media="(max-width: 480px)" srcset="img/footer/footer-front-bg-mob.png" />
-						<img data-src="img/footer/footer-front-bg.png" alt="Image">
+						<source media="(max-width: 480px)" srcset="img/footer/footer-front-bg-mob.webp" />
+						<img data-src="img/footer/footer-front-bg.webp" alt="Image">
 					</picture>
 				</div>
 			</div>
@@ -465,7 +474,7 @@
             max-width: 100%;
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
           }
 					/* Блок з елементами */
 					.fls-preloader__body{
@@ -587,7 +596,7 @@
 			</script>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240701184040"></script>
+	<script src="js/app.min.js?_v=20240705180331"></script>
 </body>
 
 </html>
