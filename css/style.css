@@ -1213,6 +1213,9 @@ html {
   .hero__background img {
     min-height: 24rem!important
   }
+  .main-content .bg-main {
+    position: fixed
+  }
   .main-content {
     margin-top: -30%;
     margin-bottom: 40vw
