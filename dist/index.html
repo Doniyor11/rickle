@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.css?_v=20240703140336">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="prealod" src="img/section-one/preloader.webm">
+	<link rel="prealod" src="img/section-one/preloader-mob.webm">
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<!-- <div class="back-to-top">
+        <button type="button" class="button-top">
+          <img loading="lazy" data-src="img/icons/back-to-top.png" alt="Image">
+        </button>
+      </div> -->
+
+		<header class="header">
+			<!-- <img src="img/header/header.png" class="header-bg" alt="Image"> -->
+			<div class="header__content">
+				<a href="#" class="header__logo">
+					<video muted loop playsinline autoplay>
+						<source src="img/header/logo.webm" type="video/webm">
+					</video>
+				</a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item menu__item-token" disabled><a href="#" class="menu__link"></a></li>
+							<li class="menu__item menu__item-1" data-goto="#roadmap"><a href="#" class="menu__link"></a></li>
+							<li class="menu__item menu__item-2" data-goto="#token"><a href="#" class="menu__link"></a></li>
+							<li class="menu__item menu__item-3"><a href="https://rickle.gitbook.io/rickle-whitepaper/" class="menu__link"></a></li>
+							<li class="menu__item menu__item-4"><a href="https://t.me/RickleWtfBot" class="menu__link"></a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__socials">
+					<ul>
+						<li class="social-button"><a href="https://t.me/+Bewg3qbjZZtkYmI0">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="28" x="0" y="0" viewBox="0 0 511.981 511.981" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+									<g>
+										<path d="M504.143 55.033c-6.249-7.672-15.628-11.898-26.412-11.898-5.818 0-11.982 1.218-18.32 3.619L25.956 210.984C2.909 219.718-.193 232.865.009 239.924c.201 7.024 4.012 19.878 27.21 27.298l91.925 33.687 48.447 110.897c4.87 15.338 15.046 26.098 28.034 29.588a35.083 35.083 0 0 0 9.13 1.201c10.548 0 21.348-4.645 30.675-13.405l40.138-37.71 97.935 67.408c8.82 6.518 18.417 9.96 27.775 9.959 18.994-.001 34.143-13.905 38.594-35.423l70.891-342.863c2.913-14.091.562-26.708-6.62-35.528zM149.609 295.704 274.7 228.623l-87.18 79.969a14.984 14.984 0 0 0-4.838 11.038c-.006.154-.025.304-.026.458l-.301 50.572zm65.281 111.62a28.536 28.536 0 0 1-2.768 2.298l.367-61.561 37.791 26.012zM481.384 84.486l-70.89 342.862c-.715 3.457-3.045 11.499-9.218 11.499-2.883 0-6.459-1.484-10.069-4.18a13.941 13.941 0 0 0-.471-.337l-107.969-74.315-.044-.03-61.044-42.017 161.255-147.916a15 15 0 0 0 2.092-19.736 15 15 0 0 0-19.321-4.537l-236.544 126.85-91.927-33.687a12.01 12.01 0 0 0-.202-.073L470.041 74.808c3.649-1.383 6.196-1.673 7.69-1.673.741 0 2.531.082 3.149.842.793.973 1.791 4.282.504 10.509z" fill="#fff" opacity="1" stroke="#52E0B5" stroke-width="10px" data-original="#000000" class=""></path>
+									</g>
+								</svg>
+							</a></li>
+						<li class="social-button">
+							<a href="https://x.com/ricklewtf">
+								<svg xmlns="http://www.w3.org/2000/svg" width="37" height="28" viewBox="0 0 37 28" fill="none">
+									<path d="M6.42056 3.20916L6.41271 3.19897L6.40576 3.18814C6.37848 3.14563 6.35304 3.08187 6.35843 3.00366C6.36377 2.92628 6.39702 2.86804 6.42717 2.83153C6.4773 2.77083 6.53742 2.7467 6.55165 2.741L6.55221 2.74077C6.59199 2.72478 6.63051 2.71868 6.64643 2.71623C6.68834 2.70978 6.74314 2.7055 6.80497 2.7021C6.93276 2.69506 7.13212 2.68974 7.41777 2.68569C7.99085 2.67757 8.92862 2.67434 10.3762 2.67434H14.129H14.274L14.3641 2.78796L17.5484 6.80447L17.5488 6.80488L17.558 6.81643C18.4314 7.91419 19.2275 8.9147 19.8078 9.64213C20.099 10.0072 20.3356 10.3032 20.5002 10.5081C20.5199 10.5326 20.5385 10.5557 20.556 10.5775C20.5833 10.5508 20.6128 10.5219 20.6446 10.4907C20.8504 10.2886 21.1469 9.99481 21.5121 9.63117C22.2424 8.90405 23.2463 7.8991 24.3475 6.79258L28.3493 2.76294L28.4373 2.67434H28.5622H29.7085H30.8548H31.5775L31.0672 3.18614L29.403 4.85553C26.2032 8.07661 24.3012 9.99382 23.2017 11.1122C22.6516 11.6718 22.304 12.0297 22.0956 12.2505C22.0513 12.2975 22.0138 12.3377 21.9824 12.3718C22.0473 12.4547 22.1332 12.564 22.2382 12.6973C22.4936 13.0217 22.8615 13.4875 23.3146 14.0602C24.2209 15.2055 25.468 16.778 26.8384 18.5015L26.8385 18.5017C29.5264 21.8883 31.7507 24.6998 31.8469 24.8222C31.8475 24.823 31.8482 24.8238 31.8488 24.8246C31.8494 24.8253 31.8498 24.8259 31.85 24.8261L31.85 24.8261C31.895 24.8849 31.9421 24.995 31.8928 25.1218C31.8542 25.2212 31.7779 25.2662 31.7568 25.2781C31.7074 25.306 31.6581 25.3155 31.6433 25.3183L31.6423 25.3185C31.599 25.3269 31.5441 25.3318 31.4867 25.3355C31.3658 25.3433 31.1745 25.349 30.8949 25.3533C30.3334 25.362 29.3941 25.3652 27.8994 25.3652H24.1465H24.0016L23.9115 25.2517L20.5275 20.9846L20.5274 20.9845L17.3532 16.9859L13.3501 21.0094L13.3499 21.0097L9.11387 25.2766L9.02588 25.3652H8.90097H7.75469C7.22114 25.3652 6.92201 25.3644 6.76782 25.3531C6.72822 25.3502 6.68734 25.346 6.64988 25.3383C6.64961 25.3383 6.64933 25.3382 6.64904 25.3382C6.6248 25.3332 6.54475 25.317 6.4755 25.2562C6.43132 25.2175 6.38691 25.1565 6.37244 25.0735C6.3588 24.9952 6.37779 24.9312 6.39394 24.8936C6.4196 24.8338 6.46037 24.7916 6.46961 24.782C6.47009 24.7815 6.47048 24.7811 6.47079 24.7808L6.47069 24.7807L6.47705 24.7744C6.82219 24.4326 9.23538 22.0028 11.5643 19.6554C12.7283 18.4821 13.8706 17.33 14.722 16.4707C15.1476 16.0411 15.5005 15.6847 15.7469 15.4354C15.8254 15.356 15.8931 15.2875 15.9489 15.231C15.8907 15.157 15.8175 15.0641 15.7303 14.9536C15.4854 14.6431 15.131 14.1949 14.6937 13.6424C13.8191 12.5374 12.6132 11.0156 11.2876 9.34381C8.63266 6.00182 6.44232 3.23742 6.42056 3.20916ZM6.90356 25.1965C6.90237 25.1978 6.90332 25.197 6.90573 25.1943C6.905 25.195 6.90428 25.1958 6.90356 25.1965ZM10.3424 4.74131C11.1598 5.75368 14.2757 9.6138 17.901 14.1075C17.901 14.1075 17.901 14.1075 17.901 14.1076L25.3866 23.3806L26.9026 23.3846H26.903H27.9296C27.1069 22.3656 23.9946 18.51 20.3745 14.0226C20.3745 14.0226 20.3745 14.0226 20.3745 14.0226L12.8889 4.74525L11.373 4.74131H11.3722H10.3424Z" fill="white" stroke="#52E0B5" stroke-width="0.6" />
+								</svg>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="header__mob">
+				<div class="header-mob__content">
+					<div class="header__menu menu">
+
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="language">
+									<a href="index-ru.html">
+										РУС
+									</a>
+									<a href="index.html" class="active">
+										ENG
+									</a>
+								</li>
+								<li>
+									<a href="https://t.me/RickleWtfBot" target="_blank">
+										TG App
+									</a>
+								</li>
+
+								<li>
+									<button type="button" class="menu__icon icon-menu"><span></span></button>
+								</li>
+							</ul>
+						</nav>
+
+						<nav class="menu__body--list">
+							<ul>
+								<li>
+									<a href="https://rickle.gitbook.io/rickle-whitepaper/">
+										WHITEPAPER
+									</a>
+								</li>
+								<li>
+									<a href="#" data-goto="#token">
+										TOKENOMICS
+									</a>
+								</li>
+								<li>
+									<a href="#" data-goto="#roadmap">
+										ROADMAP
+									</a>
+								</li>
+								<li class="social-button">
+									<a href="https://x.com/ricklewtf">
+										<svg xmlns="http://www.w3.org/2000/svg" width="37" height="28" viewBox="0 0 37 28" fill="none">
+											<path d="M6.42056 3.20916L6.41271 3.19897L6.40576 3.18814C6.37848 3.14563 6.35304 3.08187 6.35843 3.00366C6.36377 2.92628 6.39702 2.86804 6.42717 2.83153C6.4773 2.77083 6.53742 2.7467 6.55165 2.741L6.55221 2.74077C6.59199 2.72478 6.63051 2.71868 6.64643 2.71623C6.68834 2.70978 6.74314 2.7055 6.80497 2.7021C6.93276 2.69506 7.13212 2.68974 7.41777 2.68569C7.99085 2.67757 8.92862 2.67434 10.3762 2.67434H14.129H14.274L14.3641 2.78796L17.5484 6.80447L17.5488 6.80488L17.558 6.81643C18.4314 7.91419 19.2275 8.9147 19.8078 9.64213C20.099 10.0072 20.3356 10.3032 20.5002 10.5081C20.5199 10.5326 20.5385 10.5557 20.556 10.5775C20.5833 10.5508 20.6128 10.5219 20.6446 10.4907C20.8504 10.2886 21.1469 9.99481 21.5121 9.63117C22.2424 8.90405 23.2463 7.8991 24.3475 6.79258L28.3493 2.76294L28.4373 2.67434H28.5622H29.7085H30.8548H31.5775L31.0672 3.18614L29.403 4.85553C26.2032 8.07661 24.3012 9.99382 23.2017 11.1122C22.6516 11.6718 22.304 12.0297 22.0956 12.2505C22.0513 12.2975 22.0138 12.3377 21.9824 12.3718C22.0473 12.4547 22.1332 12.564 22.2382 12.6973C22.4936 13.0217 22.8615 13.4875 23.3146 14.0602C24.2209 15.2055 25.468 16.778 26.8384 18.5015L26.8385 18.5017C29.5264 21.8883 31.7507 24.6998 31.8469 24.8222C31.8475 24.823 31.8482 24.8238 31.8488 24.8246C31.8494 24.8253 31.8498 24.8259 31.85 24.8261L31.85 24.8261C31.895 24.8849 31.9421 24.995 31.8928 25.1218C31.8542 25.2212 31.7779 25.2662 31.7568 25.2781C31.7074 25.306 31.6581 25.3155 31.6433 25.3183L31.6423 25.3185C31.599 25.3269 31.5441 25.3318 31.4867 25.3355C31.3658 25.3433 31.1745 25.349 30.8949 25.3533C30.3334 25.362 29.3941 25.3652 27.8994 25.3652H24.1465H24.0016L23.9115 25.2517L20.5275 20.9846L20.5274 20.9845L17.3532 16.9859L13.3501 21.0094L13.3499 21.0097L9.11387 25.2766L9.02588 25.3652H8.90097H7.75469C7.22114 25.3652 6.92201 25.3644 6.76782 25.3531C6.72822 25.3502 6.68734 25.346 6.64988 25.3383C6.64961 25.3383 6.64933 25.3382 6.64904 25.3382C6.6248 25.3332 6.54475 25.317 6.4755 25.2562C6.43132 25.2175 6.38691 25.1565 6.37244 25.0735C6.3588 24.9952 6.37779 24.9312 6.39394 24.8936C6.4196 24.8338 6.46037 24.7916 6.46961 24.782C6.47009 24.7815 6.47048 24.7811 6.47079 24.7808L6.47069 24.7807L6.47705 24.7744C6.82219 24.4326 9.23538 22.0028 11.5643 19.6554C12.7283 18.4821 13.8706 17.33 14.722 16.4707C15.1476 16.0411 15.5005 15.6847 15.7469 15.4354C15.8254 15.356 15.8931 15.2875 15.9489 15.231C15.8907 15.157 15.8175 15.0641 15.7303 14.9536C15.4854 14.6431 15.131 14.1949 14.6937 13.6424C13.8191 12.5374 12.6132 11.0156 11.2876 9.34381C8.63266 6.00182 6.44232 3.23742 6.42056 3.20916ZM6.90356 25.1965C6.90237 25.1978 6.90332 25.197 6.90573 25.1943C6.905 25.195 6.90428 25.1958 6.90356 25.1965ZM10.3424 4.74131C11.1598 5.75368 14.2757 9.6138 17.901 14.1075C17.901 14.1075 17.901 14.1075 17.901 14.1076L25.3866 23.3806L26.9026 23.3846H26.903H27.9296C27.1069 22.3656 23.9946 18.51 20.3745 14.0226C20.3745 14.0226 20.3745 14.0226 20.3745 14.0226L12.8889 4.74525L11.373 4.74131H11.3722H10.3424Z" fill="white" stroke="#52E0B5" stroke-width="0.6" />
+										</svg>
+									</a>
+								</li>
+								<li class="social-button"><a href="https://t.me/+Bewg3qbjZZtkYmI0"> <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="28" x="0" y="0" viewBox="0 0 511.981 511.981" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+											<g>
+												<path d="M504.143 55.033c-6.249-7.672-15.628-11.898-26.412-11.898-5.818 0-11.982 1.218-18.32 3.619L25.956 210.984C2.909 219.718-.193 232.865.009 239.924c.201 7.024 4.012 19.878 27.21 27.298l91.925 33.687 48.447 110.897c4.87 15.338 15.046 26.098 28.034 29.588a35.083 35.083 0 0 0 9.13 1.201c10.548 0 21.348-4.645 30.675-13.405l40.138-37.71 97.935 67.408c8.82 6.518 18.417 9.96 27.775 9.959 18.994-.001 34.143-13.905 38.594-35.423l70.891-342.863c2.913-14.091.562-26.708-6.62-35.528zM149.609 295.704 274.7 228.623l-87.18 79.969a14.984 14.984 0 0 0-4.838 11.038c-.006.154-.025.304-.026.458l-.301 50.572zm65.281 111.62a28.536 28.536 0 0 1-2.768 2.298l.367-61.561 37.791 26.012zM481.384 84.486l-70.89 342.862c-.715 3.457-3.045 11.499-9.218 11.499-2.883 0-6.459-1.484-10.069-4.18a13.941 13.941 0 0 0-.471-.337l-107.969-74.315-.044-.03-61.044-42.017 161.255-147.916a15 15 0 0 0 2.092-19.736 15 15 0 0 0-19.321-4.537l-236.544 126.85-91.927-33.687a12.01 12.01 0 0 0-.202-.073L470.041 74.808c3.649-1.383 6.196-1.673 7.69-1.673.741 0 2.531.082 3.149.842.793.973 1.791 4.282.504 10.509z" fill="#fff" opacity="1" stroke="#52E0B5" stroke-width="10px" data-original="#000000" class=""></path>
+											</g>
+										</svg></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="header__language language-block language-block--pc">
+			<ul>
+				<li>
+					<a href="index-ru.html">
+						РУС
+					</a>
+				</li>
+				<li>
+					<a href="index.html" class="active">
+						ENG
+					</a>
+				</li>
+			</ul>
+		</div>
+		<main class="page">
+
+			<section class="section-two hero">
+				<div class="hero__content">
+					<div class="hero__background">
+						<!-- <img data-loading="lazy" data-src="img/section-two/section-two-bg.png" alt="Image"> -->
+						<video autoplay playsinline muted loop>
+							<source src="img/section-two/section-two-bg.webm" type="video/webm">
+							Your browser does not support the video tag.
+						</video>
+						<img data-loading="lazy" data-src="img/section-two/fixed-bottom.webp" alt="Image">
+					</div>
+					<div class="hero__body">
+						<div class="info-block__slide slide main-slide">
+							<div class="slide__body">
+								<h4>
+									RICKLE
+								</h4>
+
+								<p>
+									LAST PROFIT PRESALE is coming soon...
+								</p>
+								<p class="last">
+									CHECK FUC***ING <a href="#">TELEGRAM</a>, MORTY!
+								</p>
+								<a href="https://t.me/+Bewg3qbjZZtkYmI0" target="_blank" class="slide-link">
+
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="28" x="0" y="0" viewBox="0 0 511.981 511.981" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+										<g>
+											<path d="M504.143 55.033c-6.249-7.672-15.628-11.898-26.412-11.898-5.818 0-11.982 1.218-18.32 3.619L25.956 210.984C2.909 219.718-.193 232.865.009 239.924c.201 7.024 4.012 19.878 27.21 27.298l91.925 33.687 48.447 110.897c4.87 15.338 15.046 26.098 28.034 29.588a35.083 35.083 0 0 0 9.13 1.201c10.548 0 21.348-4.645 30.675-13.405l40.138-37.71 97.935 67.408c8.82 6.518 18.417 9.96 27.775 9.959 18.994-.001 34.143-13.905 38.594-35.423l70.891-342.863c2.913-14.091.562-26.708-6.62-35.528zM149.609 295.704 274.7 228.623l-87.18 79.969a14.984 14.984 0 0 0-4.838 11.038c-.006.154-.025.304-.026.458l-.301 50.572zm65.281 111.62a28.536 28.536 0 0 1-2.768 2.298l.367-61.561 37.791 26.012zM481.384 84.486l-70.89 342.862c-.715 3.457-3.045 11.499-9.218 11.499-2.883 0-6.459-1.484-10.069-4.18a13.941 13.941 0 0 0-.471-.337l-107.969-74.315-.044-.03-61.044-42.017 161.255-147.916a15 15 0 0 0 2.092-19.736 15 15 0 0 0-19.321-4.537l-236.544 126.85-91.927-33.687a12.01 12.01 0 0 0-.202-.073L470.041 74.808c3.649-1.383 6.196-1.673 7.69-1.673.741 0 2.531.082 3.149.842.793.973 1.791 4.282.504 10.509z" fill="#97FA7D" opacity="1" stroke="#97FA7D" stroke-width="10px" data-original="#000000" class=""></path>
+										</g>
+									</svg>
+									<span>ricklewtf</span>
+								</a>
+							</div>
+						</div>
+						<div class="hero__info-block info-block" style="display: none;">
+							<div class="info-block__slider swiper">
+								<div class="info-block__wrapper swiper-wrapper">
+									<div class="info-block__slide swiper-slide slide">
+										<div class="slide__body">
+											<h4>
+												ABOUT US
+											</h4>
+											<p>
+
+												P2E (play-to-earn) is a project inspired by the cult universe of Rick and Morty. The project combines elements of DeFi, game mechanics and community activity, creating a unique experience for all participants.
+
+											</p>
+											<p>
+												RickfinityMeta is a gaming ecosystem in which you can participate in mini-games, quests and competitions and receive rewards for this in the form of tokens and NFT, which can later be sold or used inside the game to develop your gaming account.
+
+											</p>
+										</div>
+									</div>
+									<div class="info-block__slide swiper-slide slide slide-two">
+										<div class="slide__body">
+											<h4>
+												FEATURES OF RICKLE:
+											</h4>
+											<p>
+												<span>1. </span>
+												Earning Opportunity: By diving into the ecosystem, you will have the opportunity to earn our tokens ($RM and $TICKET), as well as NFTs of various rarity.
+
+
+											</p>
+											<p>
+												<span>2.</span>
+												Unique Digital Assets: The NFT and tokens obtained in the game will be given real value and they can be used both inside and outside the ecosystem.
+											</p>
+										</div>
+									</div>
+									<div class="info-block__slide swiper-slide slide slide-two">
+										<div class="slide__body">
+											<h4>
+												FEATURES OF RICKLE:
+											</h4>
+											<p>
+												<span>3. </span>
+
+												Account Development: Users can use their rewards to improve their gaming account by gaining access to new features and capabilities.
+
+
+
+
+											</p>
+											<p>
+												<span>4.</span>
+												Internal Marketplace: Players can sell and buy NFT from each other on the internal marketplace, creating a vibrant and dynamic economy within the game
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="info-block__actions">
+									<button type="button" class="swiper-button-prev slider-button">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="38" viewBox="0 0 24 38" fill="none">
+											<path d="M21.323 2.17461C22.5105 3.36211 23.4902 4.37891 23.4902 4.41602C23.4902 4.45312 20.2246 7.75586 16.2391 11.7414L8.98047 19L16.2391 26.2586C20.2246 30.2441 23.4902 33.5469 23.4902 33.584C23.4902 33.6805 19.1707 38 19.0742 38C19.0297 38 14.725 33.725 9.5 28.5L0 19L9.5 9.5C14.725 4.275 19.0371 0 19.0742 0C19.1188 0 20.1281 0.979687 21.323 2.17461Z" fill="#83FD9B" />
+										</svg>
+									</button>
+									<div class="swiper-pagination"></div>
+									<button type="button" class="swiper-button-next slider-button">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="38" viewBox="0 0 24 38" fill="none">
+											<path d="M2.16719 2.17467C0.979688 3.36217 0 4.37897 0 4.41608C0 4.45319 3.26562 7.75592 7.25117 11.7415L14.5098 19.0001L7.25117 26.2587C3.26562 30.2442 0 33.5469 0 33.584C0 33.6805 4.31953 38.0001 4.41602 38.0001C4.46055 38.0001 8.76523 33.7251 13.9902 28.5001L23.4902 19.0001L13.9902 9.50006C8.76523 4.27507 4.45312 6.48499e-05 4.41602 6.48499e-05C4.37148 6.48499e-05 3.36211 0.979752 2.16719 2.17467Z" fill="#83FD9B" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="hero__controller">
+                <img data-loading="lazy" data-src="img/section-one/controller/controller.png" class="controller-image" alt="Image Controller">
+                <img data-loading="lazy" data-src="img/section-one/controller/billboard.png" class="billboard-image" alt="Image Billboard">
+                <div class="hero__controler-button">
+                  <button type="button" class="hero__controller-button">
+                    <img data-loading="lazy" data-src="img/section-one/controller/button.png" alt="Image">
+                  </button>
+                </div>
+              </div> -->
+
+						<div class="hero__rick-and-info">
+							<div class="rick-image">
+								<img loading="lazy" data-src="img/section-two/rick.webp" alt="Image Rick Main Section">
+							</div>
+							<div class="main-text">
+								<p>
+									There's no time to be dumb while others are earning, Morty!
+									It's time to act — now!
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /.section-two -->
+			<section class="section-three main-content">
+				<video class="bg-main" muted loop playsinline autoplay>
+					<source src="img/section-three/background-mob.webm" type="video/webm" media="(max-width:480px)">
+					<source src="img/section-three/background.webm" type="video/webm">
+				</video>
+				<div class="main-content__content" id="roadmap">
+					<div class="main-content__content-top">
+						<div class="main-content__content-top-bg content-top-bg">
+							<div class="content-top-bg__video">
+								<video autoplay playsinline muted loop>
+									<source src="img/section-three/Roadmap 25 fps.webm" type="video/webm">
+									Your browser does not support the video tag.
+								</video>
+
+							</div>
+							<div class="content-top-bg__video-colba">
+								<!-- <img data-loading="lazy" data-src="img/section-three/colba.gif" alt="Image gif"> -->
+								<video muted loop playsinline autoplay>
+									<source src="img/section-three/colba.webm" type="video/webm">
+								</video>
+
+							</div>
+							<div class="content-top-bg__video-keyboard">
+								<img data-loading="lazy" data-src="img/section-three/keyboard.gif" alt="Image">
+
+
+							</div>
+							<div class="content-top-bg__video-mouse">
+								<img data-loading="lazy" data-src="img/section-three/mouse.gif" alt="Image">
+
+
+							</div>
+							<img data-loading="lazy" data-src="img/section-three/construction.png" alt="Image">
+						</div>
+					</div>
+					<div class="main-content__content-bottom">
+						<div class="main-content__list">
+							<div class="main-content__step step step-q2">
+								<div class="step__body">
+									<div class="step__heading done">
+										STEP 1
+									</div>
+									<div class="step__list">
+										<ul>
+											<li class="done">
+												1.1. Token launch on Fairlaunch.
+
+
+
+
+
+
+											</li>
+											<li class="done">
+												1.2. TG Miniapp Release.
+											</li>
+											<li class="done">1.3. Listing on DEX.</li>
+											<li>1.4. Distribution of NFT for holders with <br> Fair Launch.</li>
+											<li>1.5. The first NFT collection</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="main-content__step step step-q3">
+								<div class="step__body text-right">
+									<div class="step__heading">
+										STEP 2
+									</div>
+									<div class="step__list">
+										<ul>
+											<li>
+												2.1. Major airdrop.
+
+
+
+
+
+
+
+
+
+											</li>
+											<li> 2.2. Utilitarian nfts for miniapp.</li>
+											<li> 2.3. Listing on all popular DEXs.</li>
+											<li> 2.4. Creation of a closed DAO.</li>
+											<li> 2.5. Release of the first mini-game.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="main-content__step step step-q4">
+								<div class="step__body">
+									<div class="step__heading">
+										STEP 3
+									</div>
+									<div class="step__list">
+										<ul>
+											<li>
+												3.1. Release of a multiplayer mini-game.
+
+
+
+
+
+
+
+
+											</li>
+											<li>3.2. Output of the NFT collection for the marketplace.</li>
+											<li> 3.3. NFT Marketplace in TG Mini App.</li>
+											<li> 3.4. Development of the in-game economy.</li>
+											<li>3.5. Listing on CEX.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-content__background">
+					<!-- <img data-loading="lazy" data-src="img/section-three/background.png" alt="Image"> -->
+					<!-- <video autoplay playsinline muted loop>
+              <source loading="lazy" data-src="img/section-three/background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video> -->
+				</div>
+
+			</section>
+			<!-- /.section-three -->
+		</main>
+		<footer class="footer" id="token">
+			<div class="footer__content">
+				<div class="footer__front-image-top">
+
+					<picture>
+						<source media="(max-width: 480px)" srcset="img/section-three/perehod-mob.gif" />
+						<img data-src="img/section-three/perehod.gif" alt="Image gif">
+					</picture>
+				</div>
+				<div class="footer__background">
+					<video muted loop playsinline autoplay>
+						<source src="img/footer/footer-mob.webm" type="video/webm" media="(max-width:480px)">
+						<source src="img/footer/footer.webm" type="video/webm">
+					</video>
+				</div>
+				<div class="footer__board">
+					<picture>
+						<source media="(max-width: 480px)" srcset="img/footer/en/board-mob.gif" />
+						<img data-src="img/footer/en/board.gif" alt="Image gif">
+					</picture>
+				</div>
+				<div class="footer__front-image">
+					<picture>
+						<source media="(max-width: 480px)" srcset="img/footer/footer-front-bg-mob.webp" />
+						<img data-src="img/footer/footer-front-bg.webp" alt="Image">
+					</picture>
+				</div>
+			</div>
+		</footer>
+		<!-- Документація: https://template.fls.guru/template-docs/modul-preloader.html -->
+		<div id="fls-preloader">
+			<!-- Скріпт прелоадера -->
+			<script>
+				function preloader() {
+					const preloaderImages = document.querySelector('[data-preloader]') ? document.querySelectorAll('[data-preloader] img') : document.querySelectorAll('img');
+					const preloaderContainer = document.querySelector('#fls-preloader');
+					if (preloaderImages.length) {
+						const preloaderStyleTemplate = `
+				<style>
+					* {
+						padding: 0px;
+						margin: 0px;
+						border: 0px;
+						box-sizing: border-box;
+					}
+					/* Головний блок */
+					.fls-preloader{
+						pointer-events: none;
+						z-index: 5;
+						position: fixed;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						left: 0;
+						display: flex;
+						justify-content:center;
+						align-items: center;
+            background-color: #000;
+					}
+          .fls-preloader__bg {
+            position: absolute;
+            inset: 0;
+          }
+          .fls-preloader__bg  video {
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+					/* Блок з елементами */
+					.fls-preloader__body{
+						padding: 0.93rem;
+						max-width: 61.25rem;
+            width: 100%;
+						display: flex;
+						flex-direction: column;
+            position: relative;
+            z-index: 5;
+					}
+					/* Блок з лічильником */
+					.fls-preloader__counter{
+						font-size: 4vw;
+            color: #70FF00;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+                    mix-blend-mode: plus-lighter;
+            transform: translate(-50%, -50%)
+					}
+					/* Прогресбар */
+					.fls-preloader__line{
+          	background-color: rgba(204, 255, 0, 0.25);
+            border: 2px solid #70FF00;
+            height: 5vw;
+          }
+					/* Лінія прогресбару */
+					.fls-preloader__line span{
+						display: inline-block;
+						transition: width 0.2s ease;
+						height: 100%;
+            background-color: #CCFF00;
+					}
+					.lock body{
+						overflow: hidden;
+						touch-action: none;
+						overscroll-behavior: none;
+					}
+					.loading body>*:not(.fls-preloader){
+						opacity: 0;
+						visibility: hidden;
+					}
+					.loaded body>*:not(.fls-preloader){
+						transition: opacity 0.5s ease 0s;
+						opacity: 1;
+						visibility: visible;
+					}
+				</style>`;
+
+						document.head.insertAdjacentHTML("beforeend", preloaderStyleTemplate);
+
+						const preloaderTemplate = `
+					<div class="fls-preloader">
+            <div class="fls-preloader__bg">
+           
+              <video muted loop playsinline autoplay>
+                <source src="img/section-one/preloader-mob.webm" type="video/webm" media="(max-width:480px)">
+                <source src="img/section-one/preloader.webm" type="video/webm">
+              </video>
+            </div>
+						<div class="fls-preloader__body">
+							<div class="fls-preloader__counter">0%</div>
+							<div class="fls-preloader__line"><span></span></div>
+						</div>
+					</div>`;
+						document.body.insertAdjacentHTML("beforeend", preloaderTemplate);
+
+						const
+							preloader = document.querySelector('.fls-preloader'),
+							showPecentLoad = document.querySelector('.fls-preloader__counter'),
+							showLineLoad = document.querySelector('.fls-preloader__line span'),
+							htmlDocument = document.documentElement;
+
+						let imagesLoadedCount = counter = progress = 0;
+
+						htmlDocument.classList.add('loading');
+						htmlDocument.classList.add('lock');
+
+						preloaderImages.forEach(preloaderImage => {
+							const imgClone = document.createElement('img');
+							if (imgClone) {
+								imgClone.onload = imageLoaded;
+								imgClone.onerror = imageLoaded;
+								preloaderImage.dataset.src ? imgClone.src = preloaderImage.dataset.src : imgClone.src = preloaderImage.src;
+							}
+						});
+
+						function setValueProgress(progress) {
+							showPecentLoad ? showPecentLoad.innerText = `${progress}%` : null;
+							showLineLoad ? showLineLoad.style.width = `${progress}%` : null;
+						}
+						showPecentLoad ? setValueProgress(progress) : null;
+
+						function imageLoaded() {
+							imagesLoadedCount++;
+							progress = Math.round((100 / preloaderImages.length) * imagesLoadedCount);
+							const intervalId = setInterval(() => {
+								counter >= progress ? clearInterval(intervalId) : setValueProgress(++counter);
+								counter >= 100 ? addLoadedClass() : null;
+							}, 300);
+						}
+
+						function addLoadedClass() {
+							htmlDocument.classList.add('loaded');
+							htmlDocument.classList.remove('lock');
+							htmlDocument.classList.remove('loading');
+							setInterval(() => {
+								preloader.remove();
+								preloaderContainer.remove();
+							}, 100);
+						}
+					} else {
+						preloaderContainer.remove();
+					}
+				}
+				preloader();
+			</script>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20240703140336"></script>
+</body>
+
+</html>
